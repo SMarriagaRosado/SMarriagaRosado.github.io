@@ -4,6 +4,7 @@ body {
   background-image: url(fot.jpeg);
   background-size: 110%;
   background-repeat: no-repeat;
+  background-position: center bottom;
 }
 
 .carta {
