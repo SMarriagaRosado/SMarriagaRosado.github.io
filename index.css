@@ -40,6 +40,7 @@ body {
   background-color: #fff;
   transform: rotateY(-180deg);
   font-family: 'Times New Roman', Times, serif;
+  opacity: 0.8
 }
 
 .carta.abierta .cara-delantera {
