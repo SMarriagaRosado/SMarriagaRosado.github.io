@@ -1,0 +1,178 @@
+body {
+    background-color: #000000; /* Fondo negro para toda la página */
+    margin: 0; /* Elimina el margen predeterminado del cuerpo */
+    padding: 0; /* Elimina el relleno predeterminado del cuerpo */
+    height: 100vh;
+  }
+
+  .titulo {
+    color: #fff ;
+    text-align: center;
+  }
+  .contenedor {
+    display: flex;
+    justify-content: space-between; /* Distribuye las imágenes uniformemente */
+    align-items: center; /* Centra verticalmente las imágenes */
+    padding: 30px; /* Espacio alrededor del contenedor */
+  }
+
+/* Estilos para las imágenes */
+.izquierda, .centro, .derecha {
+    max-width: 25%; /* Ajusta el tamaño máximo de las imágenes */
+    height: auto; /* Mantiene la proporción de la imagen */
+  }
+
+.izquierda {
+    order: 3; /* Cambia el orden para que esté a la izquierda */
+    margin-top: -150px;
+  }
+
+.centro {
+    order: 2; /* Cambia el orden para que esté en el centro (predeterminado) */
+    margin-top: 20px
+  }
+
+.derecha {
+    order: 1; /* Cambia el orden para que esté a la derecha */
+    margin-top: -20px;
+  }
+
+  .flores {
+    height: 200px;
+    width: 200px;
+    margin: 20px auto;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    position: relative;
+    background-color: #000000; /* Fondo negro para toda la página */
+  
+    /* Agrega una animación de pulsación */
+    animation: pulsate 2s infinite;
+  }
+  @keyframes pulsate {
+    0% {
+        transform: scale(1.5);
+    }
+    50% {
+        transform: scale(1.6);
+    }
+    100% {
+        transform: scale(1.5);
+    }
+  }
+    .mid {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      
+      background: radial-gradient(circle, #000, #ff5e00, #000);
+    
+      z-index: 4;
+    
+      background-size: 5px 5px;
+    
+      filter: drop-shadow(0 0 8px #682600);
+    }
+    
+    .Petal1 {
+      position: absolute;
+      left: 40px;
+      z-index: 3;
+    
+      width: 120px;
+      height: 30px;
+      border-radius: 50%;
+    
+      background: radial-gradient(circle, #ff5e00, #ffbb00);
+    
+      filter: drop-shadow(0 0 5px #e05200);
+    }
+    
+    .Petal1.p1 {
+      transform: rotate(22.5deg);
+    }
+    .Petal1.p2 {
+      transform: rotate(67.5deg);
+    }
+    .Petal1.p3 {
+      transform: rotate(110.5deg);
+    }
+    .Petal1.p4 {
+      transform: rotate(157.5deg);
+    }
+    
+    .Petal2 {
+      position: absolute;
+      left: 0;
+      z-index: 2;
+    
+      width: 200px;
+      height: 40px;
+      border-radius: 50%;
+    
+      background: radial-gradient(circle, #ff5e00, #fbd702);
+    
+      filter: drop-shadow(0 0 5px #e05200);
+    }
+    .Petal2.p1 {
+
+    }
+      
+    .Petal2.p2 {
+      transform: rotate(90deg);
+    }
+    .Petal2.p3 {
+      transform: rotate(45deg);
+    }
+    
+    .Petal2.p4 {
+      transform: rotate(135deg);
+    }
+    
+    .Petal3 {
+      position: absolute;
+      left: 0px;
+      z-index: 1;
+    
+      width: 200px;
+      height: 40px;
+      border-radius: 50%;
+    
+      background: radial-gradient(circle, #ff5e00, #fbd702);
+    
+      filter: drop-shadow(0 0 2px #fbd702);
+    }
+    
+    .Petal3.p1 {
+      transform: rotate(22.5deg);
+    }
+    .Petal3.p2 {
+      transform: rotate(67.5deg);
+    }
+    .Petal3.p3 {
+      transform: rotate(110.5deg);
+    }
+    .Petal3.p4 {
+      transform: rotate(157.5deg);
+    }  
+    .flower {
+      position: absolute;
+      display: inline-block;
+      font-size: 60px;
+      animation: upAndDisappear 3s linear;
+    }
+    @keyframes upAndDisappear {
+      from {
+        bottom: 0;
+        opacity: 1;
+      }
+      to {
+        bottom: 100%;
+        opacity: 0;
+      }
+    }
+
+    
