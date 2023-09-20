@@ -25,6 +25,7 @@ body {
 .izquierda {
     order: 3; /* Cambia el orden para que esté a la izquierda */
     margin-top: -150px;
+    transform: rotate(18deg);
   }
 
 .centro {
@@ -35,6 +36,7 @@ body {
 .derecha {
     order: 1; /* Cambia el orden para que esté a la derecha */
     margin-top: -20px;
+    transform: rotate(18deg);
   }
 
   .flores {
