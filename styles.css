@@ -24,7 +24,7 @@ body {
 
 .izquierda {
     order: 3; /* Cambia el orden para que esté a la izquierda */
-    margin-top: -150px;
+    margin-top: -100px;
     transform: rotate(18deg);
   }
 
@@ -56,13 +56,13 @@ body {
   }
   @keyframes pulsate {
     0% {
-        transform: scale(1.5);
+        transform: scale(1.4);
     }
     50% {
-        transform: scale(1.6);
+        transform: scale(1.5);
     }
     100% {
-        transform: scale(1.5);
+        transform: scale(1.4);
     }
   }
     .mid {
